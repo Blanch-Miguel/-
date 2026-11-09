@@ -10,30 +10,31 @@
  */
 
 
-
-#ifndef MATRICULA_H
+#ifndef ESTUDIANTE_H
 #define ESTUDIANTE_H
 
+
+#include <iostream>
 #include <string>
 
-typedef int ID;
 
+/* =========================
+Clase Estudiante
+========================= */
 class Estudiante {
   
   private:
-
-    ID id_estudiante; 
-    std::string nombre; 
-
+  
+    int id;
+    std::string nombre;
+  
   public:
 
-    /**
-     * @brief Constructor con parámmetros
-     * 
-     * @param _id 
-     * @param _nombre 
-     */
-    Estudiante(ID _id, const std::string& _nombre);
+    Estudiante(int id, const std::string& nombre) : id(id), nombre(nombre) {}
+
+    int getId() const { return id;  }
+  
+    std::string getNombre() const { return nombre; }
 
 };
 
