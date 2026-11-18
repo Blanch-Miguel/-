@@ -28,7 +28,40 @@ class SistemaMatriculas {
 
   public:
 
-    
+    /* ----- Gestión de estudiantes ----- */
+    void altaEstudiante(int id, const std::string& nombre) {
+
+    }
+    void bajaEstudiante(int id) {
+
+    // Debería eliminar al estudiante de todas las matrículas
+    }
+
+    /* ----- Gestión de asignaturas ----- */
+    void crearAsignatura(const std::string& nombre) {
+
+    }
+    void eliminarAsignatura(const std::string& nombre) {
+
+    }
+    /* ----- Matrículas ----- */
+    void matricular(int id, const std::string& asignatura) {
+
+    }
+
+    void desmatricular(int id, const std::string& asignatura) {
+
+    }
+    /* ----- Consultas ----- */
+    void listarEstudiantes() const {
+
+    }
+    void listarAsignaturas() const {
+
+    }
+    void estudiantesPorAsignatura(const std::string& asignatura) const {
+
+    }
 
 };
 

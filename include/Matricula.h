@@ -23,7 +23,11 @@ class Matricula {
     std::string nombre;
 
   public:
-  
+
+    Matricula(const std::string& nombre) : nombre(nombre) {}
+
+    std::string getNombre() const { return nombre; };
+
 };
 
 
