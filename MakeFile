@@ -1,0 +1,8 @@
+HOME := .
+SRC := $(HOME)/src
+INCLUDE := $(HOME)/include
+
+all : program
+
+program : $(SRC)/main.cpp
+	g++ $(SRC)/main.cpp -o program -I$(INCLUDE)

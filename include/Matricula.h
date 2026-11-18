@@ -23,7 +23,8 @@ class Matricula {
     std::string nombre;
 
   public:
-}
+  
+};
 
 
 #endif 
